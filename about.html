@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zain.about</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            background-color: rgb(43 47 59);
+        }
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #9a60da;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 33px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    font-size: 1.04rem;
+}
+.left {
+    font-size: 1.5rem;
+    color: white;
+    
+}
+.left .leftimg{
+    width: 80px;
+}
+@media screen and (max-width:1274px) {
+    nav{
+        flex-direction: column;
+    }
+}
+@media screen  and ( min-width:320px){
+    body{
+        min-inline-size: 100%;
+        min-width: fit-content;
+    }
+}
+@media screen  and (max-width:489px ){
+    body{
+        min-inline-size: 100%;
+        min-width: fit-content;
+        
+    }
+}
+        * {
+            font-family: Nunito, sans-serif;
+        }
+        .responsive-container-block {
+            min-height: 75px;
+            height: fit-content;
+            width: 100%;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            justify-content: flex-start;
+        }
+
+        .text-blk {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            line-height: 25px;
+        }
+
+        .responsive-container-block.bigContainer {
+            padding-top: 10px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+        }
+
+        .mainImg {
+            color: black;
+            width: 55%;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 7px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            
+        }
+
+        .text-blk.headingText {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 34px;
+            color: rgb(255, 253, 253);
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+        }
+
+        .allText {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 40px;
+            width: 40%;
+            margin: 0 0 0 0;
+        }
+
+        .text-blk.subHeadingText {
+            color: rgb(255, 254, 254);
+            font-size: 25px;
+            line-height: 34px;
+            font-weight: 700;
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 15px;
+            margin-left: 0px;
+        }
+
+        .text-blk.description {
+            font-size: 25px;
+            line-height: 34px;
+            color: rgb(255, 250, 250);
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 50px;
+            margin-left: 0px;
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+        }
+
+        .explore {
+            font-size: 20px;
+            line-height: 28px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(244, 152, 146);
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 0px;
+            border-left-width: 0px;
+            border-top-style: outset;
+            border-right-style: outset;
+            border-bottom-style: outset;
+            border-left-style: outset;
+            border-top-color: rgb(244, 152, 146);
+            border-right-color: rgb(244, 152, 146);
+            border-bottom-color: rgb(244, 152, 146);
+            border-left-color: rgb(244, 152, 146);
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            cursor: pointer;
+        }
+
+        .explore:hover {
+            background-image: initial;
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            /*background-repeat-x: initial;
+            background-repeat-y: initial;*/
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: rgb(255, 235, 234);
+            color: rgb(244, 152, 146);
+        }
+
+        .responsive-container-block.Container {
+            margin-top: 80px;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-left: auto;
+            justify-content: center;
+            align-items: center;
+            max-width: 1320px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .responsive-container-block.Container.bottomContainer {
+            margin-top: 100px;
+            margin-right: 0px;
+            margin-bottom: 50px;
+            margin-left: 0px;
+            flex-direction: row-reverse;
+            margin: 100px auto 50px auto;
+        }
+
+        .allText.aboveText {
+            margin: 0 0 0 40px;
+        }
+
+        .allText.bottomText {
+            margin: 0 40px 0 0;
+        }
+
+        @media (max-width: 1024px) {
+            .responsive-container-block.Container {
+                max-width: 850px;
+            }
+            body{
+              min-inline-size: 100%;
+             }
+            .mainImg {
+                width: 55%;
+                height: auto;
+            }
+
+            .text-blk.description {
+                font-size: 20px;
+            }
+
+            .allText {
+                width: 40%;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+            }
+
+            .responsive-container-block.bigContainer {
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                width: fit-content;
+            }
+
+            .text-blk.subHeadingText {
+                font-size: 22px;
+            }
+
+            .responsive-container-block.Container.bottomContainer {
+                margin: 80px auto 50px auto;
+            }
+
+            .responsive-container-block.Container {
+                max-width: 830px;
+            }
+
+            .allText.aboveText {
+                margin: 30px 0 0 40px;
+            }
+
+            .allText.bottomText {
+                margin: 30px 40px 0 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mainImg {
+                width: 90%;
+            }
+            body{
+              min-inline-size: 100%;
+              }
+            .allText {
+                width: 100%;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+            }
+
+            .responsive-container-block.Container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .text-blk.headingText {
+                text-align: center;
+            }
+
+            .text-blk.subHeadingText {
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .text-blk.description {
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .allText {
+                margin-top: 40px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+            }
+
+            .allText.aboveText {
+                margin: 40px 0 0 0;
+            }
+
+            .responsive-container-block.Container {
+                margin: 80px auto 50px auto;
+            }
+
+            .responsive-container-block.Container.bottomContainer {
+                margin: 50px auto 50px auto;
+            }
+
+            .allText.bottomText {
+                margin: 40px 0 0 0;
+            }
+        }
+        @media (max-width: 500px) {
+            .responsive-container-block.Container {
+                padding-top: 10px;
+                padding-right: 0px;
+                padding-bottom: 10px;
+                padding-left: 0px;
+                width: 100%;
+                max-width: 100%;
+            }
+            body{
+             min-inline-size: 100%;
+        
+            }
+
+            .mainImg {
+                width: 100%;
+            }
+
+            .responsive-container-block.bigContainer {
+                padding-top: 10px;
+                padding-right: 25px;
+                padding-bottom: 10px;
+                padding-left: 25px;
+                width: fit-content;
+            }
+
+            .text-blk.subHeadingText {
+                font-size: 25px;
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+            }
+
+            .text-blk.description {
+                font-size: 25px;
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+            }
+
+            .allText {
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Zain's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!--<li><a href="/">Project</a></li>-->
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+            <img class="mainImg" src="profile-pic (7).png">
+            <div class="allText aboveText">
+                <p class="text-blk headingText">
+                    MOHAMMED ZAIN SHAIKH
+                </p>
+                <p class="text-blk subHeadingText">
+                    IM'Passionate Software Developer
+                </p>
+                <p class="text-blk description">
+                    Well, I’ve Want to been work as a mern stack development for four years now, while still studying at
+                    college. Had my own projects, coded mostly in html and css JavaScript,
+                </p>
+                <button class="explore" onclick="window.location.href = 'index.html' ;">
+                    Explore
+                </button>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script>
+
+    </script>
+</body>
+</html>
